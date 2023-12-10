@@ -123,7 +123,6 @@ impl<P: PhaseItem> RenderCommand<P> for DrawTilemapBatch {
         pass: &mut TrackedRenderPass<'w>,
     ) -> RenderCommandResult {
         pass.draw(batch.range.clone(), 0..1);
-        //pass.draw_indexed(0..1, 0, batch.range.clone());
 
         RenderCommandResult::Success
     }

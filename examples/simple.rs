@@ -28,7 +28,7 @@ fn main() {
 fn input_system(
     mut camera_transform_query: Query<&mut Transform, With<Camera2d>>,
     mut tilemap_visible_query: Query<&mut Visibility, With<TileMap>>,
-    keyboard_input: Res<Input<KeyCode>>,
+    keyboard_input: Res<ButtonInput<KeyCode>>,
     time: Res<Time>,
 ) {
     const MOVE_SPEED: f32 = 1000.0;
